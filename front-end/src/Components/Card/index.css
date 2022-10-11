@@ -1,0 +1,22 @@
+.card{
+  --card-Maxwidth: 250px;
+  width: var(--card-Maxwidth);
+  height: fit-content;
+  /* min-height: fit-content; */
+  background-color: rgb(197, 211, 235);
+  border-radius: 5px;
+  color: black;
+}
+
+.card-image{
+  border-radius: 5px;
+  width: var(--card-Maxwidth);
+  object-fit: cover;
+  height: 250px;
+}
+
+.card > p{
+  font-size: 1rem;
+  padding: 0 1rem 0 1rem;
+  margin: 0;
+}

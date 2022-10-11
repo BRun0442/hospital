@@ -49,13 +49,30 @@ nav{
   font-weight: 600;
 }
 
+@keyframes header-items-changeColor {
+  to{
+    background-color: rgb(178, 202, 231);
+    padding: 15px 0 15px 0;
+    /* filter: invert(100%); */
+    border-radius: 5px;
+    /* color: rgb(71, 71, 71); */
+  }  
+}
+
+.header-list-item:hover{
+  animation-name: header-items-changeColor;
+  animation-duration: 500ms;
+  animation-delay: 10ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
 a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
 }
 
 .header-button{
-  
   display: flex;
   flex-wrap: wrap;
   width: fit-content;
@@ -70,7 +87,32 @@ a, a:hover, a:focus, a:active {
   font-size: 1rem;
   border-radius: 10px 0 10px 0;
   border: 0;
-  padding: 10px;
+  padding: 5px;
+}
+
+@keyframes buttonHoverAnimation{
+  from{
+    background-color: rgb(0, 101, 151); 
+    scale: 1; 
+    border-radius: 10px 0 10px 0;
+    color: inherit;
+  }
+
+  to{
+    background-color: rgb(0, 88, 133); 
+    scale: 1.05; 
+    border-radius: 10px 10px 10px 0;
+    color: rgb(235, 235, 235);
+  }
+}
+
+.header-button-item:hover{
+  animation-name: buttonHoverAnimation;
+  animation-duration: 700ms;
+  animation-delay: 100ms;
+
+  /* Mantem o efeito da animação até eu sair do hover */
+  animation-fill-mode: forwards;
 }
 
 .header-extendBar-button{
@@ -78,7 +120,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .header-extendBar-button > img{
-  width: 40px;
+  width: 30px;
 }
 
 @media screen and (max-width: 425px)

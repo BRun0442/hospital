@@ -2,9 +2,9 @@ body {
   margin: 0;
   font-size: 1.1em;
   font-weight: 400;
-  font-family: 'Karla', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Karla', sans-serif;
   color: rgb(209, 209, 209);
 }
 
