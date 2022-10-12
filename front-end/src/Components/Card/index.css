@@ -1,22 +1,29 @@
 .card{
   --card-Maxwidth: 250px;
   width: var(--card-Maxwidth);
-  height: fit-content;
+  height: 300px;
   /* min-height: fit-content; */
   background-color: rgb(197, 211, 235);
   border-radius: 5px;
   color: black;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
 }
 
 .card-image{
   border-radius: 5px;
   width: var(--card-Maxwidth);
+  flex: 4;
   object-fit: cover;
   height: 250px;
 }
 
 .card > p{
+  flex: 0.5;
   font-size: 1rem;
-  padding: 0 1rem 0 1rem;
+  padding: 0.3rem 1rem 0 1rem;
+  height: fit-content;
   margin: 0;
 }

@@ -1,5 +1,42 @@
 footer{
-  background-color: rgb(165, 165, 165);
-  height: 16vmin;
-  margin-top: 3em;
+  /* position: relative; */
+  /* bottom: 0; */
+  background-color: rgb(64, 130, 163);
+  /* margin-top: 13.1vh; */
+  min-height: inherit;
+  color:rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  flex-flow:column nowrap;
+  justify-content: space-around;
+}
+
+footer > h2{
+  font-weight: 300;
+  width: 100%;
+  padding: 0.5em 0 0 0;
+}
+
+.footer-icon-container{
+  padding-bottom: 1em;
+}
+
+@keyframes icon-InvertColor{
+  to{
+    filter: invert(100%);
+    scale: 1.15;
+    margin: 0 0.5em 0 0.5em;
+  }
+}
+
+.footer-icon-item:hover{
+  animation-name: icon-InvertColor;
+  animation-delay: 50ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+footer{
+  margin-top: 2.1em;
 }
